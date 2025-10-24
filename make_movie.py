@@ -33,11 +33,11 @@ def output_image(vtk_path, output_path):
 
 
 cwd = os.getcwd()
-vtk_path = "/home/paul/Desktop/motorbike3/motorBike/motorBikeLES/postProcessing/my_surfaces/0.1/y_0.0.vtk"
-img_path = "/home/paul/Desktop/motorbike3/motorBike/motorBikeLES/images/test.png"
+vtk_path = "/motorbike3/motorBike/motorBikeLES/postProcessing/my_surfaces/0.1/y_0.0.vtk"
+img_path = "/motorbike3/motorBike/motorBikeLES/images/test.png"
 
 t0 = "0.1"
-y_slices = glob.glob("/home/paul/Desktop/motorbike3/motorBike/motorBikeLES/postProcessing/my_surfaces/%s/z_*.vtk" % t0)
+y_slices = glob.glob("/motorbike3/motorBike/motorBikeLES/postProcessing/my_surfaces/%s/z_*.vtk" % t0)
 y_slices = [y_slices[5]]
 slice_vtks = []
 for ys in y_slices:
@@ -69,12 +69,3 @@ for s in slice_vtks:
     shutil.move(movie_name, "..")
     os.chdir(cwd)
     subprocess.call("rm %s" % slice_dir, shell=True)
-
-
-
-
-
-
-
-
-
