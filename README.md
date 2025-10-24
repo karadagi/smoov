@@ -1,4 +1,4 @@
-# Running a Local Server
+# VTK Viewer
 
 If you have **Node.js** installed, just open a terminal inside your project folder
 (the one containing `index.html`) and run:
