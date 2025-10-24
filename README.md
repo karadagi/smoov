@@ -1,8 +1,7 @@
-# Running a Local Server for Your Three.js Project
+# Running a Local Server
 
-If you have **Node.js** installed (which you probably do, since you used
-`npm` or `npx` before), just open a terminal inside your project folder
-(the one containing your `index.html`) and run:
+If you have **Node.js** installed, just open a terminal inside your project folder
+(the one containing `index.html`) and run:
 
 ``` bash
 npx http-server .
@@ -23,5 +22,4 @@ Then open the URL it prints --- usually:
 
 👉 <http://127.0.0.1:8080> or <http://localhost:8080>
 
-Your `bundle.js`, `models/motorBike.obj`, and textures will now load
-fine.
+`bundle.js`, `models/motorBike.obj`, and textures will now load fine.
